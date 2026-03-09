@@ -7,20 +7,21 @@ Django, DRF, SQLite3
 
 ## To install & run the project
 1. Create a virtual environment -
-  Windows
+  On Windows
 ```python3 -m venv .venv```
 ```source .venv\Scripts\activate```
-  Linux, macOS
+---
+  On Linux, macOS
 ```python3 -m venv .venv```
 ```source .venv/bin/activate```
 
-2. Clone the repo - ```git clone https://github.com/ghasnhhz/django-rest-sell-used-products```
-3. Install dependencies - ```pip install -r requirements.txt```
+3. Clone the repo - ```git clone https://github.com/ghasnhhz/django-rest-sell-used-products```
+4. Install dependencies - ```pip install -r requirements.txt```
   
-4. Run Migrations. Inside src folder: Run - 
+5. Run Migrations. Inside src folder: Run - 
   ```python manage.py makemigrations```
   ```python manage.py migrate```
-5. Run the server - ```python manage.py runserver```
+6. Run the server - ```python manage.py runserver```
 
 ## URL Endpoints
 ```
