@@ -3,5 +3,6 @@ from apps.users import views
 
 urlpatterns = [
     path("", views.CreateUserView.as_view()),
-    path("<int:pk>/", views.UserDetailView.as_view())
+    path("<int:pk>/", views.UserDetailView.as_view()),
+    path("login/", views.LoginView.as_view())
 ]
