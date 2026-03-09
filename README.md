@@ -7,10 +7,10 @@ Django, DRF, SQLite3
 
 ## To install & run the project
 1. Create a virtual environment -
-  ### Windows
+  Windows
 ```python3 -m venv .venv```
 ```source .venv\Scripts\activate```
-  ### Linux, macOS
+  Linux, macOS
 ```python3 -m venv .venv```
 ```source .venv/bin/activate```
 
