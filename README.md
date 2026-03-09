@@ -10,7 +10,6 @@ Django, DRF, SQLite3
   On Windows
 ```python3 -m venv .venv```
 ```source .venv\Scripts\activate```
----
   On Linux, macOS
 ```python3 -m venv .venv```
 ```source .venv/bin/activate```
