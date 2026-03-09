@@ -6,7 +6,7 @@ from rest_framework import status
 from django.http import Http404
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import authenticate
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 # Create your views here.
 class LoginView(APIView):
@@ -48,3 +48,10 @@ class UserDetailView(APIView):
         user = self.get_object(pk)
         serializer = UserSerializer(user)
         return Response(serializer.data)
+    
+class LogoutView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        request.user.auth_token.delete()
+        return Response({'message': 'Logged out successfully'}, status=status.HTTP_200_OK)
